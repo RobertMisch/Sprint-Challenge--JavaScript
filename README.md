@@ -30,13 +30,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.map creates a new array, and can't modify the previous one at all. while foreach simply moves through every element of an array
+
 2. What is the difference between a function and a method?
+
+a method is within an object or class, while functions can be anywhere
 
 3. What is closure?
 
+		closure describes lexical scope, and our ability to pass thing from the global scope down. while also protecting things inside functions and objects from unwanted use/access.
+
+
 4. Describe the four rules of the 'this' keyword.
 
+      1. implicit: 80% of use cases. Applies to objects in method. 
+	  if ever confused about what it applies to, look where the object is invoke and its left of the .
+
+	  2. explicit: you seperate out the method into it's own function. can use .call, .apply and .bind to reuse the code
+
+	  3. new: you make a new object and this. refers to that new object
+
+	  4. window: what this. will default go to, not good to have it go there, useing 'strict' will make it flag an error if it would.
+
 5. Why do we need super() in an extended class?
+
+	it brings in all the capabilities from the parent class, including methods and key:value pairings. they also will flag an error and not work if you don't have it.
+
 
 ## Project Set up
 
